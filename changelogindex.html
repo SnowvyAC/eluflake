@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Webstorm-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Den</title>
+        <!--Style-->
+        <link href="Styles/StyleMain.css" rel="stylesheet" />
+        <!--Google API-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&family=Sofia&family=Tangerine&display=swap"/>
+    </head>
+    <body>
+        <div class="bannerimage">
+            <h1>The Den</h1>
+        </div>
+        <div class="themeswitch">
+            <input type="checkbox" id="dark_mode" name="dark_mode" value="0">
+            <label for="dark_mode">Enable Dark mode</label>
+        </div>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="blogindex.html">BLOG</a>
+            <a href="projectsindex.html">PROJECTS</a>
+            <a href="changelogindex.html">CHANGELOG</a>
+        </div>
+        <div class="textbox">
+            <h2>1.1.1</h2>
+            <h2> 01-10-2025</h2>
+            <p>Changelog has been updated to semver, more changes to come soon :3</p>
+        </div>
+        <div class="textbox">
+            <h2>1.1.0</h2>
+            <p>Navbar has been finished, darkmode could still change</p>
+        </div>
+        <div class="textbox">
+            <h2>1.0.2</h2>
+            <p>Updated Navbar</p>
+        </div>
+        <div class="textbox">
+            <h2>1.0.1</h2>
+            <p>Added fade-in for darkmode, it still works when it wants. Updated navbar.</p>
+        </div>
+        <div class="textbox">
+            <h2>1.0.0</h2>
+            <p>Hai, this is the very first release of this website, I hope you like it.</p>
+        </div>
+        <div class="textbox">
+            <h2>0.1.1</h2>
+            <p>Added dark mode and fixed font loading issues.</p>
+        </div>
+        <div class="textbox">
+            <h2>0.1.0</h2>
+            <p>Site development starts.</p>
+        </div>
+        <!--dark mode-->
+        <script>
+            const darkModeToggle = document.getElementById("dark_mode");
+            const body = document.body;
+        
+            // Load saved preference
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+                darkModeToggle.checked = true;
+            }
+        
+            // Watch for changes
+            darkModeToggle.addEventListener("change", () => {
+                if (darkModeToggle.checked) {
+                    body.classList.add("dark-mode");
+                    localStorage.setItem("darkMode", "enabled");
+                } else {
+                    body.classList.remove("dark-mode");
+                    localStorage.setItem("darkMode", "disabled");
+                }
+            });
+        </script>
+        <script>
+            // Prevent fade on initial load
+            document.body.classList.add("preload");
+            window.addEventListener("load", () => {
+                document.body.classList.remove("preload");
+            });
+        </script>
+    </body>

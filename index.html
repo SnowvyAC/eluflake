@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Webstorm-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Elurra's den — thoughts, projects, and blog.">
+        <meta name="keywords" content="blog, fox, personal, projects, therian">
+        <title>The Den</title>
+        <!--Style-->
+        <link href="Styles/StyleMain.css" rel="stylesheet" />
+        <!--Google API-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Arimo&family=Roboto&family=Sofia&family=Tangerine&display=swap"/>
+        <!--Chattable-->
+        <script src="https://iframe.chat/scripts/main.min.js"></script>
+    </head>
+    <body>
+        <div class="bannerimage">
+            <h1>The Den</h1>
+        </div>
+        <div class="themeswitch">
+            <input type="checkbox" id="dark_mode" name="dark_mode" value="0">
+            <label for="dark_mode">Enable Dark mode</label>
+        </div>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="blogindex.html">BLOG</a>
+            <a href="projectsindex.html">PROJECTS</a>
+            <a href="changelogindex.html">CHANGELOG</a>
+        </div>
+        <div class="warning">
+            <p><b>This site might use cookies and it's still a WIP, please be mindful</b></p>
+            <p>Also dark mode may cause flashing</p>
+        </div>
+        <div class="maincontainer">
+            <div class="textbox">
+            <p><b>Hawwo!</b> sorry for the lack of content, I wanna figure out my layout before everything else, and also want to change some hardcoded things into stuff I can change easier</p>
+            </div>
+            <div class="textbox">
+                <h2>Friends :3</h2>
+                <a href="https://flooferland.com/">
+                    <img src="https://flooferland.com/assets/branding/webring.webp" alt="" width="88" height="31" style="image-rendering: pixelated">
+                 </a>
+                <a href="https://diariodealguiennormal.neocities.org/">
+                    <img src="https://diariodealguiennormal.neocities.org/twincyboton.gif" alt="Twincy" width="88" height="31">
+                 </a>
+            </div>
+            <div class="textbox">
+                <h2>Cool sites I visited while building my own</h2>
+                <p>Just as stated, here are a few sites I visited while coding this whole this</p>
+                <a href="https://sekh-net.nekoweb.org/">
+                    <img src="https://sekh-net.nekoweb.org/assets/snbuttonsmall.png" alt="" width="88" height="31">
+                
+                <a href='https://roselilyqueen.nekoweb.org'>
+                    <img width=88 height=31 src='https://roselilyqueen.nekoweb.org/media/B1.png' title='\pinkspace\'></a>
+                </a>
+            </div>
+        </div>
+        <iframe src="https://iframe.chat/embed?chat=74492211" id="chattable"></iframe>
+        <div class="textbox">
+            <p><b>Return to nekoweb</b></p>
+            <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif"></a><!-- button by s1nez.nekoweb.org -->
+        </div>
+        <!--Dark Mode-->
+        <script>
+            const darkModeToggle = document.getElementById("dark_mode");
+            const body = document.body;
+        
+            // Load saved preference
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+                darkModeToggle.checked = true;
+            }
+        
+            // Watch for changes
+            darkModeToggle.addEventListener("change", () => {
+                if (darkModeToggle.checked) {
+                    body.classList.add("dark-mode");
+                    localStorage.setItem("darkMode", "enabled");
+                } else {
+                    body.classList.remove("dark-mode");
+                    localStorage.setItem("darkMode", "disabled");
+                }
+            });
+        </script>
+        <script>
+            chattable.initialize({
+                stylesheet: "chattable.css"
+            });
+        </script>
+    </body>
+</html>

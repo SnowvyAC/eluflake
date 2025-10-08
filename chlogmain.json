@@ -1,0 +1,38 @@
+[   
+    {
+        "date": "2025-09-30",
+        "version": "0.1.0",
+        "summary": "Navbar for light mode is done.",
+        "file_path": "Uneeded"
+    },
+    {
+        "date": "2025-09-30",
+        "version": "0.0.5",
+        "summary": "Updated navbar.",
+        "file_path": "Uneeded"
+    },
+    {
+        "date": "2025-09-29",
+        "version": "0.0.4",
+        "summary": "Added fade-in for darkmode, it still works when it wants. Updated navbar.",
+        "file_path": "Uneeded"
+    },
+    {
+        "date": "2025-09-29",
+        "version": "0.0.3",
+        "summary": "Site is revamped and released via nekoweb.",
+        "file_path": "Uneeded"
+    },
+    {
+        "date": "2025-09-24",
+        "version": "0.0.2",
+        "summary": "Added dark mode and fixed font loading issues.",
+        "file_path": "Uneeded"
+    },
+    {
+        "date": "2025-09-17",
+        "version": "0.0.1",
+        "summary": "site development starts.",
+        "file_path": "Uneeded"
+    }
+]

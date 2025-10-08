@@ -1,0 +1,115 @@
+/*WARNING*/
+.warning p{
+    color: red
+}
+/*Light Mode - catppuchin Frappe*/
+body{
+    background-color: #f4b8e4;
+}
+h1 {
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    color:indigo;
+}
+h2 {
+    font-size: 25px;
+    font-family: Ubuntu, Bold;
+    Color: #303446;
+}
+p {
+    font-size: 12px;
+    font-family: Ubuntu;
+    color: #303446;
+}
+.navbar a {
+    padding: 10px;
+    background-color: indigo;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Ubuntu';
+    color: #c6d0f5;
+}
+.navbar a:hover {
+    color: #414559;
+    background-image: linear-gradient(to bottom, #e78284, #d34952);
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom,  #ca9ee6, #e69ee0);
+    border: 5px solid indigo;
+    border-radius: 15px;
+}
+.maincontainer {
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:gray
+}
+.bannerimage h1{
+    text-align: center;
+}
+.textbox {
+    background-image: linear-gradient(to bottom,  #ca9ee6, #e69ee0);
+    padding: 20px;
+    margin-top: 20px;
+    border: 5px solid indigo;
+    border-radius: 5px;
+}
+.textbox .a {
+    padding: 10px;
+    background-color: indigo;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    color: #c6d0f5;
+}
+
+/*Dark mode*/
+body.dark-mode{
+    background-color: rgb(9, 6, 9);
+    }
+.dark-mode h1 {
+    color: rgb(165, 7, 238);
+}
+.dark-mode h2 {
+    color:#000000;
+}
+.dark-mode p {
+    color: #000000;
+}
+.dark-mode .navbar a {
+    color: #000000;
+    background-color: violet
+}
+.dark-mode .navbar a:hover {
+    color: #ff66ff;
+    background-image: linear-gradient(to bottom, gray, black);
+}
+.dark-mode .navbar {
+    background-image: linear-gradient(to bottom, #b4befe, #eeb0fa);
+    border: 5px, solid #eba0ac;
+}
+.dark-mode .maincontainer {
+    color: #ccc
+}
+.dark-mode .textbox {
+    background-image: linear-gradient(to bottom, #b4befe, #eeb0fa);
+    border: 5px, solid #eba0ac;
+}
+
+/*transition*/
+body, h1, h2, p, button, .navbar a, .maincontainer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/*Disable transitions until page is ready*/
+body.preload * {
+    transition: none !important;
+}
+/*temp*/
+.dark-mode .ip {
+    color: #fff;
+}

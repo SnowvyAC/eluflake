@@ -1,0 +1,81 @@
+
+/*Light Mode*/
+body{
+    background-color: rgb(247, 186, 255);
+}
+h1 {
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    color:indigo;
+}
+h2 {
+    font-size: 25px;
+    font-family: cursive;
+    Color:black;
+}
+p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+.navbar a {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    color: #333;
+}
+.navbar a:hover {
+color: rgb(255, 44, 185);
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: rgb(202, 87, 255);
+    border-radius: 15px;
+}
+.maincontainer {
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:gray
+}
+.bannerimage h1{
+    text-align: center;
+}
+
+/*Dark mode*/
+body.dark-mode{
+    background-color: rgb(9, 6, 9);
+    }
+.dark-mode h1 {
+    color: rgb(165, 7, 238);
+}
+.dark-mode h2 {
+    color:rgb(255, 255, 255);
+}
+.dark-mode p {
+    color:rgb(255, 255, 255);
+}
+.dark-mode .navbar a {
+    color: #fff;
+}
+.dark-mode .navbar a:hover {
+    color: #ff66ff;
+}
+.dark-mode .navbar {
+    background-color: rgb(139, 22, 58);
+}
+.dark-mode .maincontainer {
+    color: #ccc
+}
+
+/*transition*/
+body, h1, h2, p, button, .navbar a, .maincontainer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/*Disable transitions until page is ready*/
+body.preload * {
+    transition: none !important;
+}

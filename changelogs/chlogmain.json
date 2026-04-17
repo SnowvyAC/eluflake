@@ -1,0 +1,50 @@
+[   
+    {
+        "Date": "09-10-2025" ,
+        "Version": "1.1.2" ,
+        "Summary": "'index' Has been updated to finally use src",
+        "FilePath": "WIP"
+    },
+    {
+        "Date": "01-10-2025",
+        "Version": "1.1.1",
+        "Summary": "Changelog has been updated to use semver, more changes to come!",
+        "FilePath": "Uneeded"
+    },
+    {
+        "Date": "30-09-2025",
+        "Version": "1.1.0",
+        "Summary": "Navbar for light mode is done.",
+        "FilePath": "Uneeded"
+    },
+    {
+        "Date": "30-09-2025",
+        "Version": "1.0.2",
+        "Summary": "Updated navbar.",
+        "FilePath": "Uneeded"
+    },
+    {
+        "Date": "29-09-2025",
+        "Version": "1.0.1",
+        "Summary": "Added fade-in for darkmode, it still works when it wants. Updated navbar.",
+        "FilePath": "Uneeded"
+    },
+    {
+        "Date": "29-09-2025",
+        "Version": "1.0.0",
+        "Summary": "Site is revamped and released via nekoweb.",
+        "FilePath": "Uneeded"
+    },
+    {
+        "Date": "24-09-2025",
+        "Version": "0.1.1",
+        "Summary": "Added dark mode and fixed font loading issues.",
+        "FilePath": "Uneeded"
+    },
+    {
+        "Date": "17-09-2025",
+        "Version": "0.1.0",
+        "Summary": "site development starts.",
+        "FilePath": "Uneeded"
+    }
+]

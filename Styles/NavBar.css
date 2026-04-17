@@ -1,0 +1,36 @@
+/*Light Mode*/
+.navbar a {
+    padding: 10px;
+    background-color: indigo;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Ubuntu';
+    color: #c6d0f5;
+}
+.navbar a:hover {
+    color: #414559;
+    background-image: linear-gradient(to bottom, #e78284, #d34952);
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom,  #ca9ee6, #e69ee0);
+    border: 5px solid indigo;
+    border-radius: 15px;
+}
+/*Dark Mode*/
+.DarkMode .navbar a {
+    color: #000000;
+    background-color: violet
+}
+.dark-mode .navbar a:hover {
+    color: #ff66ff;
+    background-image: linear-gradient(to bottom, gray, black);
+}
+.dark-mode .navbar {
+    background-image: linear-gradient(to bottom, #b4befe, #eeb0fa);
+    border: 5px, solid #eba0ac;
+}

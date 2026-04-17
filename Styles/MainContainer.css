@@ -1,0 +1,10 @@
+/*Light Mode*/
+.maincontainer {
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:gray
+}
+/*Dark Mode*/
+.dark-mode .maincontainer {
+    color: #ccc
+}

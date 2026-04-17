@@ -55,33 +55,5 @@
             <h2>0.1.0</h2>
             <p>Site development starts.</p>
         </div>
-        <!--dark mode-->
-        <script>
-            const darkModeToggle = document.getElementById("dark_mode");
-            const body = document.body;
-        
-            // Load saved preference
-            if (localStorage.getItem("darkMode") === "enabled") {
-                body.classList.add("dark-mode");
-                darkModeToggle.checked = true;
-            }
-        
-            // Watch for changes
-            darkModeToggle.addEventListener("change", () => {
-                if (darkModeToggle.checked) {
-                    body.classList.add("dark-mode");
-                    localStorage.setItem("darkMode", "enabled");
-                } else {
-                    body.classList.remove("dark-mode");
-                    localStorage.setItem("darkMode", "disabled");
-                }
-            });
-        </script>
-        <script>
-            // Prevent fade on initial load
-            document.body.classList.add("preload");
-            window.addEventListener("load", () => {
-                document.body.classList.remove("preload");
-            });
-        </script>
     </body>
+</html>

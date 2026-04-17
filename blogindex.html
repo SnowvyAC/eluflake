@@ -30,7 +30,7 @@
         </div>
         <!--lastest update-->
         <div class="textbox">
-            <h2
+            <h2></h2>
         </div>
         <!--lastest update temp-->
         <div class="textbox">
@@ -44,34 +44,5 @@
             <p>A very rough year for me I won't lie, it's been hard and it seems to only get harder, but I've got support and imma continue for them</p>
             <a href="Blog/2025.html">Click me!</a>
         </div>
-        <!--Dark Mode-->
-        <script>
-            const darkModeToggle = document.getElementById("dark_mode");
-            const body = document.body;
-        
-            // Load saved preference
-            if (localStorage.getItem("darkMode") === "enabled") {
-                body.classList.add("dark-mode");
-                darkModeToggle.checked = true;
-            }
-        
-            // Watch for changes
-            darkModeToggle.addEventListener("change", () => {
-                if (darkModeToggle.checked) {
-                    body.classList.add("dark-mode");
-                    localStorage.setItem("darkMode", "enabled");
-                } else {
-                    body.classList.remove("dark-mode");
-                    localStorage.setItem("darkMode", "disabled");
-                }
-            });
-        </script>
-        <script>
-            // Prevent fade on initial load
-            document.body.classList.add("preload");
-            window.addEventListener("load", () => {
-                document.body.classList.remove("preload");
-            });
-        </script>
     </body>
 </html>

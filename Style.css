@@ -52,6 +52,8 @@ p {
     text-align: center;
 }
 .textbox {
+    width: 100%;
+    margin: 0 auto;
     background-image: linear-gradient(to bottom, #f4b8e4, #f2d5cf);
     padding: 20px;
     margin-top: 20px;
@@ -67,4 +69,21 @@ p {
     font-family: 'Arimo', sans-serif;
     color: #c6d0f5;
 }
-
+.textbox_small {
+    width: 65%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #f4b8e4, #f2d5cf);
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid #ca9ee6;
+    border-radius: 5px;
+}
+.textbox_tiny {
+    width: 45%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #f4b8e4, #f2d5cf);
+    padding: 10px;
+    margin-top: 5px;
+    border: 5px solid #ca9ee6;
+    border-radius: 5px;
+}

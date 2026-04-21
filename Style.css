@@ -87,3 +87,9 @@ p {
     border: 5px solid #ca9ee6;
     border-radius: 5px;
 }
+.small_lefty{
+    float: left;
+}
+.small_righty{
+    float: right;
+}
